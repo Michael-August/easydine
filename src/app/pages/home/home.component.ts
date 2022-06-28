@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { map, Observable } from 'rxjs';
 import { IResturant } from 'src/app/models/resturant';
+import { closeAsyncLoader, showAsyncLoader } from 'src/app/shared/helpers';
 import { ResturantsService } from 'src/app/shared/services/resturants/resturants.service';
 
 @Component({
@@ -12,6 +13,7 @@ import { ResturantsService } from 'src/app/shared/services/resturants/resturants
 export class HomeComponent implements OnInit {
 
   resturants: IResturant[] | undefined
+  location: string = 'Ikeja'
 
   constructor(private resturantservice: ResturantsService, private router: Router) { }
 
@@ -20,9 +22,10 @@ export class HomeComponent implements OnInit {
   }
 
   get_resturants() {
+    showAsyncLoader('please wait...')
     this.resturantservice.getResturants().subscribe((res: any) => {
-      this.resturants = res.filter((resturant: IResturant) => resturant.location.city == 'Ikeja')
-    })
+      this.resturants = res.filter((resturant: IResturant) => resturant.location.city == this.location)
+    }).add(closeAsyncLoader())
   }
 
   viewAll() {
@@ -36,11 +39,26 @@ export class HomeComponent implements OnInit {
 
     navigator.geolocation.getCurrentPosition(position => {
       console.log(position);
-      fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=AIzaSyC514hZSji_mnWxew7ty7jz45K1SWwTwG8`)
+      let key = 'AsVjObCu_ybd5wKva6gWFfi5EHH88z0uFPYB55ToLaLQ8b_IdvzGuDKhm7R_IpnJ'
+      let lat = position.coords.latitude
+      let long = position.coords.longitude
+      fetch(`http://dev.virtualearth.net/REST/v1/Locations/${lat},${long}?key=${key}`)
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => {
+        let fullAddress = data.resourceSets[0].resources[0].address
+        this.location = fullAddress.adminDistrict2
+        
+        showAsyncLoader('please wait...')
+        this.resturantservice.getResturants().subscribe((res: any) => {
+          this.resturants = res.filter((resturant: IResturant) => resturant.location.city == this.location)
+          console.log(this.location);
+          
+        }).add(closeAsyncLoader())
+      })
       
     })
+
+    
   }
  
 }

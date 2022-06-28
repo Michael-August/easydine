@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fugaz+One&family=Nunito:wght@500&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fugaz+One&family=Lato&family=Nunito:wght@500&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fugaz+One&family=Lato&family=Nunito:wght@500&family=Poppins:wght@300&family=Space+Grotesk:wght@600&display=swap');
+
+:root {
+    --primary-color: #002C55;
+    --secondary-color: #FFC300;
+    --gold-touch: #554100;
+
+    --heading-font-family: Fugaz One; 
+    --main-font-family: Lato; 
+    --logo-font-family: Space Grotesk;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+    font-family: var(--main-font-family);
+
+    animation: fadeInAnimation ease-in-out 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+/* @keyframes fadeInAnimation {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+/* section {
+    margin: 0 112px;
+} */

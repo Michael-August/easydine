@@ -1,0 +1,15 @@
+<div class="cards">
+    <div class="card" *ngFor="let resturant of resturantThumbnail">
+        <div class="img">
+            <img routerLink="/resturants/{{resturant.id}}" [src]="resturant.rest_image" alt="">
+        </div>
+        <div class="text">
+            <h3>{{ resturant.name }}</h3>
+            <p class="rating">rating</p>
+            <p>{{resturant.location.city}} {{resturant.price_range}}</p>
+            <p class="booked">Booked {{resturant.no_of_book}} times today</p>
+            <button routerLink="/resturants/{{resturant.id}}">Take a Tour</button>
+        </div>
+    </div>
+</div>
+    

@@ -1,0 +1,87 @@
+.card {
+    width: 280px;
+    height: 457.97px;
+    border-radius: 10px;
+    border: solid 1px black;
+    margin-right: 24px;
+    margin-bottom: 20px;
+
+    animation: fadeInAnimation ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.img {
+    height: 233.72882080078125px;
+    max-width: 278px;
+    overflow: hidden;
+}
+
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: inherit;
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid 1px black;
+    transition: all 0.4s ease-in-out;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.text h3 {
+    font-size: 22.54px;
+}
+
+.text .rating {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.booked {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 12px;
+    background: transparent;
+    border: solid 2px var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    border-radius: 7px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 1216px; */
+}
+
+/* @keyframes fadeInAnimation {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+

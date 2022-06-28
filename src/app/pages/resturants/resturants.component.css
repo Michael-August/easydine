@@ -1,0 +1,49 @@
+.resturants {
+    margin: 0 112px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text h2 {
+    font-family: var(--heading-font-family);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 65px;
+    letter-spacing: -0.015em;
+    color: var(--primary-color);
+}
+
+.text p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: Lato;
+    font-size: 20px;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.015em;
+}
+
+hr {
+    margin: 0 -110px;
+}
+
+.back {
+    margin: 40px 0;
+    color: white;
+    background: var(--primary-color);
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    width: 8%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.back:hover {
+    opacity: 0.7;
+}

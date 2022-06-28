@@ -1,0 +1,160 @@
+{
+    "resturants": [
+        {
+            "id": 1,
+            "name": "Luca's Rooftop",
+            "rating": "4",
+            "available_times": [],
+            "no_of_book": "20",
+            "rest_image": "assets/images/resturants/resturant1.jpg",
+            "price_range":"5,000 - 20,000",
+            "location": {
+                "state": "Lagos",
+                "city": "Apartado",
+                "address": "Alameda Doutor Armando Soares Ribeiro Praia Dona Ana, Apartado 33, Lagos 8600-500 Portugal"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Poke Lagos",
+            "rating": "3",
+            "available_times": [],
+            "no_of_book": "10",
+            "rest_image": "assets/images/resturants/resturant2.jpg",
+            "price_range": "5,000 - 20,000",
+            "location": {
+                "state": "Lagos",
+                "city": "Ikeja",
+                "address": "Rua Dom Vasco da Gama 12 A, Lagos 8600-722 Portugal"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Goji Lounge Cafe",
+            "rating": "23",
+            "available_times": [],
+            "no_of_book": "4",
+            "rest_image": "assets/images/resturants/resturant3.jpg",
+            "price_range": "5,000 - 20,000",
+            "location": {
+                "state": "Anambra",
+                "city": "Awka",
+                "address": "Rua Dom Vasco da Gama 12 A, Awka 8600-722 Portugal"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Amorizade",
+            "rating": "3",
+            "available_times": [],
+            "no_of_book": "25",
+            "rest_image": "assets/images/resturants/resturant4.jpg",
+            "price_range": "10,000 - 30,000",
+            "location": {
+                "state": "Lagos",
+                "city": "Ikeja",
+                "address": "Rua Dom Vasco da Gama 12 A, Lagos 8600-722 Portugal"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Baffi Bar",
+            "rating": "4",
+            "available_times": [],
+            "no_of_book": "34",
+            "rest_image": "assets/images/resturants/resturant5.jpg",
+            "price_range": "5,000 - 10,000",
+            "location": {
+                "state": "Enugu",
+                "city": "GRA",
+                "address": "Rua Dom Vasco da Gama 12 A, Enugu 8600-722 Portugal"
+            }
+        },
+        {
+            "id": 6,
+            "name": "La Esterella",
+            "rating": "3",
+            "available_times": [],
+            "no_of_book": "15",
+            "rest_image": "assets/images/resturants/resturant6.jpg",
+            "price_range": "5,000 - 20,000",
+            "location": {
+                "state": "Port Harcourt",
+                "city": "Trans Amadi",
+                "address": "Rua Dom Vasco da Gama 12 A, PH 8600-722 Portugal"
+            }
+        },
+        {
+            "id": 7,
+            "name": "Shalima",
+            "rating": "4",
+            "available_times": [],
+            "no_of_book": "5",
+            "rest_image": "assets/images/resturants/resturant7.jpg",
+            "price_range": "10,000 - 60,000",
+            "location": {
+                "state": "Lagos",
+                "city": "Ikoyi",
+                "address": "Rua Dom Vasco da Gama 12 A, Lagos 8600-722 Portugal"
+            }
+        },
+        {
+            "id": 8,
+            "name": "Empanadas & Co",
+            "rating": "4",
+            "available_times": [],
+            "no_of_book": "23",
+            "rest_image": "assets/images/resturants/resturant8.jpg",
+            "price_range": "5,000 - 10,000",
+            "location": {
+                "state": "Rivers State",
+                "city": "Port Harcourt",
+                "address": "Rua Dom Vasco da Gama 12 A, PH 8600-722 Portugal"
+            }
+        },
+        {
+            "id": 9,
+            "name": "Indian Place",
+            "rating": "3",
+            "available_times": [],
+            "no_of_book": "5",
+            "rest_image": "assets/images/resturants/resturant9.jpg",
+            "price_range": "20,000 - 50,000",
+            "location": {
+                "state": "Lagos",
+                "city": "V.I",
+                "address": "Rua Dom Vasco da Gama 12 A, Lagos 8600-722 Portugal"
+            }
+        },
+        {
+            "id": 10,
+            "name": "Avenida Resturants",
+            "rating": "3",
+            "available_times": [],
+            "no_of_book": "5",
+            "rest_image": "assets/images/resturants/resturant10.jpg",
+            "price_range": "5,000 - 10,000",
+            "location": {
+                "state": "Abuja",
+                "city": "Zuba",
+                "address": "Rua Dom Vasco da Gama 12 A, Abuja 8600-722 Portugal"
+            }
+        }
+    ],
+    "spaces": [
+        {
+            "resturant_id": 1,
+            "id": 1,
+            "space_image": "",
+            "name": "",
+            "person_per_table": "",
+            "table_numbers": []
+        }
+    ],
+    "bookings": [
+        {
+            "id": 1,
+            "resturant_id": 1
+        }
+    ]
+}

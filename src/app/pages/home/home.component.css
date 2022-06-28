@@ -1,0 +1,257 @@
+.banner {
+    background: url('../../../assets/images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+.text {
+    margin-top: 164px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 50px;
+    line-height: 76.8px;
+    font-family: var(--heading-font-family);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin: 0 228.5px;
+    margin-bottom: 50px;
+}
+
+form button {
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    width: 15%;
+    background: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+form button:hover {
+    opacity: 0.7;
+}
+
+form input, select {
+    margin-right: 10px;
+    padding: 15px;
+    padding-left: 35px;
+    border-radius: 4px;
+    border: none;
+    background: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+select > option {
+    padding: 25px;
+}
+
+.get-location {
+    cursor: pointer;
+    color: var(--secondary-color);
+    margin-left: 35px;
+}
+
+.input {
+    position: relative;
+}
+
+/* input[type=text] {
+    width: 120%;
+} */
+
+.attarch {
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.location-img {
+    position: absolute;
+    margin-left: 10px;
+}
+
+.places {
+    margin: 120px 112px;
+}
+
+.places > h1 {
+    margin-bottom: 50px;
+    font-family: var(--heading-font-family);
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 65px;
+    letter-spacing: -0.015em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.headers > p {
+    margin-right: 40px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list ul {
+    list-style: none;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.list ul > li {
+    margin-bottom: 30px;
+}
+
+.sub-footer {
+    margin-left: 195px;
+    width: 1052px;
+    padding-bottom: 70px;
+    margin-bottom: 150px;
+    /* height: 392px; */
+    background: url('../../../assets/images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sub-footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.sub-footer > .head {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 550;
+    z-index: 2;
+}
+
+.sub-footer > .describe {
+    margin-top: 34px;
+    width: 612px;
+    margin-left: 250px;
+    z-index: 2;
+    line-height: 26.6px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 53px;
+}
+
+.sub-footer > button {
+    margin: auto;
+    width: 20%;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: var(--secondary-color);
+    border: none;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.sub-footer > button:hover {
+    opacity: 0.7;
+}
+
+.head > span {
+    font-size: 50px;
+    font-family: var(--heading-font-family);
+    color: var(--gold-touch);
+    font-size: 50px;
+}
+
+
+.resturants {
+    margin: 0 112px;
+}
+
+.text h1 {
+    font-family: var(--heading-font-family);
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 65px;
+    letter-spacing: -0.015em;
+}
+
+.text p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: Lato;
+    font-size: 20px;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.015em;
+}
+
+hr {
+    margin: 0 -110px;
+}
+
+.view-all {
+    margin-bottom: 40px;
+    color: white;
+    background: var(--primary-color);
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    width: 15%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+/* .view-all::after {
+    content: '';
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background-color: var(--primary-color);
+} */
+
+.view-all:hover {
+    opacity: 0.7;
+}

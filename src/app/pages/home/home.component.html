@@ -1,0 +1,100 @@
+<div class="banner">
+    <div class="text">
+        <h2>Find and reserve spots to suite your taste</h2>
+    </div>
+    <div class="form">
+        <form>
+            <div class="input">
+                <img class="attarch" src="../../../assets/images/calender.png" alt="">
+                <input type="date" name="" id="">
+            </div>
+            <div class="input">
+                <img class="attarch" src="../../../assets/images/clock.png" alt="">
+                <select name="" id="">
+                    <option value="">2:00pm</option>
+                    <option value="">3:00pm</option>
+                    <option value="">4:00pm</option>
+                    <option value="">5:00pm</option>
+                </select>
+            </div>
+            <div class="input">
+                <img class="attarch" src="../../../assets/images/people.png" alt="">
+                <select name="" id="">
+                    <option value="2">2 people</option>
+                    <option value="4">4 people</option>
+                    <option value="6">6 people</option>
+                    <option value="8">8 people</option>
+                </select>
+            </div>
+            <div class="input">
+                <img class="attarch" src="../../../assets/images/search.png" alt="">
+                <input type="text" name="" id="" placeholder="Location, Resturant or Cusine">
+            </div>
+            <button type="submit">Let's go</button>
+        </form>
+    </div>
+    <div class="location">
+        <p>It looks like you are in <span class="city">Ikeja</span> Not correct? <img class="location-img" src="../../../assets/images/location.png" alt="location"> <span class="get-location" (click)="get_location()">Get Current Location</span></p>
+    </div>
+</div>
+
+<div class="resturant-listing">
+    <div class="popular-resturants">
+        <div class="text">
+            <h1>Popular resturants in <span>Ikeja</span> </h1>
+            <p>Discover different cusines around you</p>
+            <hr>
+        </div>
+        <div class="resturants">
+            <button class="view-all" (click)="viewAll()">view all </button>
+            <app-resturant-thumbnails [resturantThumbnail]="resturants"></app-resturant-thumbnails>
+        </div>
+        
+    </div>
+</div>
+
+<div class="places">
+    <h1>Expore EasyDine</h1>
+    <div class="header">
+        <div class="headers">
+            <p>National cities/regions</p>
+            <p>Nearby</p>
+        </div>
+        <div></div>
+    </div>
+    <hr>
+    <div class="list">
+        <ul>
+            <li>Ikeja</li>
+            <li>V.I Lagos</li>
+            <li>Port Harcourt</li>
+            <li>Ikoyi</li>
+        </ul>
+        <ul>
+            <li>Ikorodu</li>
+            <li>Calabar</li>
+            <li>Ilupeju</li>
+            <li>Abuja</li>
+        </ul>
+        <ul>
+            <li>Owerri</li>
+            <li>Ado Ekiti</li>
+            <li>Asaba</li>
+            <li>Oshogbo</li>
+        </ul>
+        <ul>
+            <li>Kafanchan</li>
+            <li>Lokoja</li>
+            <li>Nnewi</li>
+            <li>Kano</li>
+        </ul>
+    </div>
+</div>
+
+<div class="sub-footer">
+    <p class="head">Own or Manage a Resturant? <span class="join"> Join Us!</span></p>
+    <p class="describe">Join the more than 50,000 resturants which fill seats and manage reservations with <span class="logo">easydine</span></p>
+    <button>Learn More</button>
+</div>
+
+

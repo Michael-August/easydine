@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IResturant } from 'src/app/models/resturant';
+import { closeAsyncLoader, showAsyncLoader } from 'src/app/shared/helpers';
 import { ResturantsService } from 'src/app/shared/services/resturants/resturants.service';
 
 @Component({
@@ -19,13 +20,9 @@ export class ResturantListComponent implements OnInit {
   }
 
   get_resturants() {
+    showAsyncLoader('processing, please wait...')
     this.resturantservice.getResturants().subscribe((res: any) => {
       this.resturants = res
-    })
+    }).add(closeAsyncLoader())
   }
-
-  go_back(){
-    window.history.back()
-  }
-
 }

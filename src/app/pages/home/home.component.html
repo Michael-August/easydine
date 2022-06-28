@@ -34,14 +34,14 @@
         </form>
     </div>
     <div class="location">
-        <p>It looks like you are in <span class="city">Ikeja</span> Not correct? <img class="location-img" src="../../../assets/images/location.png" alt="location"> <span class="get-location" (click)="get_location()">Get Current Location</span></p>
+        <p>It looks like you are in <span class="city">{{location}}</span> Not correct? <img class="location-img" src="../../../assets/images/location.png" alt="location"> <span class="get-location" (click)="get_location()">Get Current Location</span></p>
     </div>
 </div>
 
 <div class="resturant-listing">
     <div class="popular-resturants">
         <div class="text">
-            <h1>Popular resturants in <span>Ikeja</span> </h1>
+            <h1>Popular resturants in <span>{{location}}</span> </h1>
             <p>Discover different cusines around you</p>
             <hr>
         </div>

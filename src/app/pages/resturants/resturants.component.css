@@ -1,5 +1,6 @@
 .resturants {
     margin: 0 112px;
+    margin-bottom: 150px;
     display: flex;
     flex-direction: column;
 }

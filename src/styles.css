@@ -2,14 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fugaz+One&family=Nunito:wght@500&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fugaz+One&family=Lato&family=Nunito:wght@500&family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fugaz+One&family=Lato&family=Nunito:wght@500&family=Poppins:wght@300&family=Space+Grotesk:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arima:wght@300;400&family=Fugaz+One&family=Lato&family=Montserrat:wght@500&family=Nunito:wght@500&family=Poppins:wght@300&family=Space+Grotesk:wght@600&display=swap');
 
 :root {
     --primary-color: #002C55;
     --secondary-color: #FFC300;
     --gold-touch: #554100;
 
-    --heading-font-family: Fugaz One; 
+    --heading-font-family: Arima; 
     --main-font-family: Lato; 
     --logo-font-family: Space Grotesk;
 }

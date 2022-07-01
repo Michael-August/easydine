@@ -22,7 +22,8 @@
 form {
     display: flex;
     align-items: center;
-    margin: 0 228.5px;
+    margin: 0;
+    margin-left: 300px;
     margin-bottom: 50px;
 }
 
@@ -31,10 +32,9 @@ form button {
     padding: 15px;
     border-radius: 4px;
     border: none;
-    width: 15%;
+    width: 12%;
     background: var(--secondary-color);
     font-size: 16px;
-    font-weight: 700;
     line-height: 100%;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
@@ -55,8 +55,8 @@ form input, select {
     font-weight: 400;
 }
 
-select > option {
-    padding: 25px;
+select {
+    cursor: pointer;
 }
 
 .get-location {
@@ -183,7 +183,6 @@ select > option {
     border: none;
     z-index: 2;
     font-size: 20px;
-    font-weight: 600;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }

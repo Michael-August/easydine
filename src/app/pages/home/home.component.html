@@ -3,23 +3,25 @@
         <h2>Find and reserve spots to suite your taste</h2>
     </div>
     <div class="form">
-        <form>
-            <div class="input">
+        <form [formGroup]="searchParams" (submit)="sendSearch()">
+            <div class="input" hidden="true">
                 <img class="attarch" src="../../../assets/images/calender.png" alt="">
-                <input type="date" name="" id="">
+                <input formControlName="date" type="date" name="date" id="">
             </div>
             <div class="input">
                 <img class="attarch" src="../../../assets/images/clock.png" alt="">
-                <select name="" id="">
-                    <option value="">2:00pm</option>
-                    <option value="">3:00pm</option>
-                    <option value="">4:00pm</option>
-                    <option value="">5:00pm</option>
+                <select formControlName="time" name="time" id="">
+                    <option value="">--select time--</option>
+                    <option value="2:00pm">2:00pm</option>
+                    <option value="3:00pm">3:00pm</option>
+                    <option value="4:00pm">4:00pm</option>
+                    <option value="5:00pm">5:00pm</option>
                 </select>
             </div>
             <div class="input">
                 <img class="attarch" src="../../../assets/images/people.png" alt="">
-                <select name="" id="">
+                <select formControlName="no_of_people" name="no_of_people" id="">
+                    <option value="">--select no of people--</option>
                     <option value="2">2 people</option>
                     <option value="4">4 people</option>
                     <option value="6">6 people</option>
@@ -28,9 +30,9 @@
             </div>
             <div class="input">
                 <img class="attarch" src="../../../assets/images/search.png" alt="">
-                <input type="text" name="" id="" placeholder="Location, Resturant or Cusine">
+                <input formControlName="search_term" type="text" id="" name="search" placeholder="Location, Resturant or Cusine">
             </div>
-            <button type="submit">Let's go</button>
+            <button type="">Let's go</button>
         </form>
     </div>
     <div class="location">
@@ -54,7 +56,7 @@
 </div>
 
 <div class="places">
-    <h1>Expore EasyDine</h1>
+    <h1>Explore EasyDine</h1>
     <div class="header">
         <div class="headers">
             <p>National cities/regions</p>

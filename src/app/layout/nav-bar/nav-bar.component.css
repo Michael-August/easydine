@@ -10,6 +10,12 @@ nav {
     line-height: 19px;
 }
 
+/* .sticky{
+    position: fixed;
+    background-color: var(--primary-color);
+    color: white;
+} */
+
 .nav-links {
     display: flex;
     align-items: center;

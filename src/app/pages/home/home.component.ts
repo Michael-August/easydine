@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { map, Observable } from 'rxjs';
 import { IResturant } from 'src/app/models/resturant';
@@ -14,6 +15,14 @@ export class HomeComponent implements OnInit {
 
   resturants: IResturant[] | undefined
   location: string = 'Ikeja'
+  national: boolean = true
+
+  searchParams = new FormGroup({
+    date: new FormControl(''),
+    time: new FormControl(''),
+    no_of_people: new FormControl(''),
+    search_term: new FormControl('')
+  })
 
   constructor(private resturantservice: ResturantsService, private router: Router) { }
 
@@ -47,7 +56,7 @@ export class HomeComponent implements OnInit {
       .then(data => {
         let fullAddress = data.resourceSets[0].resources[0].address
         this.location = fullAddress.adminDistrict2
-        
+
         showAsyncLoader('please wait...')
         this.resturantservice.getResturants().subscribe((res: any) => {
           this.resturants = res.filter((resturant: IResturant) => resturant.location.city == this.location)
@@ -57,8 +66,18 @@ export class HomeComponent implements OnInit {
       })
       
     })
+  }
 
-    
+  sendSearch() {
+    const param = {
+      date: this.searchParams.get('date')?.value,
+      time: this.searchParams.get('time')?.value,
+      no_of_people: this.searchParams.get('no_of_people')?.value,
+      search_term: this.searchParams.get('search_term')?.value
+    }
+
+    this.resturantservice.sendSearchParams(param)
+    this.router.navigate(['/resturants'])
   }
  
 }

@@ -5,11 +5,11 @@
         </div>
         <div class="text">
             <h3>{{ resturant.name }}</h3>
-            <p class="rating">rating</p>
+            <star-rating [value]="resturant.rating" [totalstars]="5" checkedcolor="goldenrod" uncheckedcolor="gray" size="30px" [readonly]="false" (rate)="onRate($event)"></star-rating>
             <p>{{resturant.location.city}} {{resturant.price_range}}</p>
             <p class="booked">Booked {{resturant.no_of_book}} times today</p>
             <button routerLink="/resturants/{{resturant.id}}">Take a Tour</button>
         </div>
     </div>
 </div>
-    
+

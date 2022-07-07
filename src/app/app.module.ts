@@ -14,6 +14,8 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from '../app/pages/home/home.component';
 import { SpacesComponent } from './pages/spaces/spaces.component';
 import { ResturantsComponent } from './pages/resturants/resturants.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ResturantsComponent } from './pages/resturants/resturants.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

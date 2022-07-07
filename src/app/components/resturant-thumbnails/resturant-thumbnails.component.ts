@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { StarRatingComponent } from 'ng-starrating';
 import { IResturant } from 'src/app/models/resturant';
 
 @Component({
@@ -15,5 +15,12 @@ export class ResturantThumbnailsComponent implements OnInit {
   }
 
   @Input() resturantThumbnail: IResturant[] | undefined
+
+  onRate($event:{oldValue:number, newValue:number, starRating:StarRatingComponent}) {
+    alert(`Old Value:${$event.oldValue}, 
+      New Value: ${$event.newValue}, 
+      Checked Color: ${$event.starRating.checkedcolor}, 
+      Unchecked Color: ${$event.starRating.uncheckedcolor}`);
+  }
 
 }

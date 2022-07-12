@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpaceThumbnailsComponent } from './space-thumbnails.component';
+import { SpacesComponent } from './resturant-detail.component';
 
-describe('SpaceThumbnailsComponent', () => {
-  let component: SpaceThumbnailsComponent;
-  let fixture: ComponentFixture<SpaceThumbnailsComponent>;
+describe('SpacesComponent', () => {
+  let component: SpacesComponent;
+  let fixture: ComponentFixture<SpacesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SpaceThumbnailsComponent ]
+      declarations: [ SpacesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpaceThumbnailsComponent);
+    fixture = TestBed.createComponent(SpacesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

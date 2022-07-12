@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-spaces',
-  templateUrl: './spaces.component.html',
-  styleUrls: ['./spaces.component.css']
+  templateUrl: './resturant-detail.component.html',
+  styleUrls: ['./resturant-detail.component.css']
 })
 export class SpacesComponent implements OnInit {
 

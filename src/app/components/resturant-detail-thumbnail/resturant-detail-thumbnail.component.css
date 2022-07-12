@@ -1,0 +1,27 @@
+.banner {
+    background: url('../../../assets/images/banner.jpg')center no-repeat;
+    background-repeat: no-repeat;
+    height: 712px;
+}
+
+.details {
+    display: flex;
+    margin: -77px 112px 0 112px;
+    /* height: 1000px; */
+}
+
+.right {
+    background-color: white;
+    width: 33.33%;
+}
+
+.left {
+    background-color: white;
+    width: 66.66%;
+    margin-right: 49px;
+}
+
+/* img {
+    width: 100%;
+    height: inherit;
+} */

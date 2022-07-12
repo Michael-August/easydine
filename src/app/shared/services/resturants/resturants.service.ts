@@ -20,6 +20,10 @@ export class ResturantsService {
     return this.http.get(`${BASE_URL}/resturants?name=${param.search_term}`)
   }
 
+  getResturant(id: number) {
+    return this.http.get(`${BASE_URL}/resturants/${id}`)
+  }
+
   sendSearchParams(params: any) {
     this.subject.next(params)
   }

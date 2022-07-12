@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-space-list',
-  templateUrl: './space-list.component.html',
-  styleUrls: ['./space-list.component.css']
+  selector: 'app-resturant-detail',
+  templateUrl: './resturant-detail.component.html',
+  styleUrls: ['./resturant-detail.component.css']
 })
-export class SpaceListComponent implements OnInit {
+export class ResturantDetailComponent implements OnInit {
 
   resturantId!: string | null;
 
@@ -15,5 +15,9 @@ export class SpaceListComponent implements OnInit {
   ngOnInit(): void {
     this.resturantId = this.activatedRoute.snapshot.paramMap.get('id')
   }
+
+  // getResturant(resturantId) {
+    
+  // }
 
 }

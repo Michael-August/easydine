@@ -133,7 +133,7 @@ select {
     margin-left: 195px;
     width: 1052px;
     padding-bottom: 70px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
     /* height: 392px; */
     background: url('../../../assets/images/footer.png');
     background-size: cover;

@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SpaceDetailComponent } from './components/space-detail/space-detail.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ResturantsComponent } from './pages/resturants/resturants.component';
-import { SpacesComponent } from './pages/spaces/spaces.component';
+import { SpacesComponent } from './pages/resturant-detail/resturant-detail.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },

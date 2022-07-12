@@ -5,6 +5,8 @@ export interface IResturant {
     available_times: Array<string>,
     no_of_book: number,
     rest_image: string,
+    tags: Array<string>
+    description: string
     price_range: string
     location: {
         state: string,

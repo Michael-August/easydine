@@ -4,10 +4,176 @@
     </div>
     <div class="details">
         <div class="left">
+            <div class="tab">
+                <ul class="links">
+                    <li class="link-item"><a routerLink="#overview">Overview</a> </li>
+                    <li class="link-item"><a routerLink="/#photos">Photos</a> </li>
+                    <li class="link-item"><a routerLink="/resturants/2#menu">Menu</a></li>
+                    <li class="link-item"><a routerLink="/resturants/2#reviews">Reviews</a></li>
+                </ul>
+            </div>
 
+            <div class="title">
+                <h1 class="resturant-name">{{resturant.name}}</h1>
+            </div>
+
+            <div class="overview" id="overview">
+                <div class="header">
+                    <div class="rate-review-meals">
+                        <star-rating [value]="resturant.rating" [totalstars]="5" checkedcolor="goldenrod" uncheckedcolor="gray" size="30px"
+                            [readonly]="false" (rate)="onRate($event)"></star-rating>
+                        <div class="review-summary">
+                            <img src="assets/images/message.png" alt="">
+                            <p class="badge-text">400 <span>Reviews</span></p>
+                        </div>
+                        <div class="review-summary">
+                            <img src="assets/images/fork.png" alt="">
+                            <p class="badge-text">English Breahfast</p>
+                        </div>
+                    </div>
+                    <div class="resturant-tags">
+                        <div class="prefix">Top Tags: </div>
+                        <p class="tags" *ngFor="let tag of resturant.tags">{{tag}}</p>
+                    </div>
+                </div>
+
+                <div class="body">
+                    <p>{{resturant.description}}</p>
+                    <div class="read-more">
+                        <div class="read-more-btn">
+                            <p> + </p>
+                        </div>
+                        <p>Read more</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photos" id="photos">
+                <h2>30 Photos</h2>
+
+                <div class="tab photo-tab">
+                    <ul class="links">
+                        <li class="link-item">All</li>
+                        <li class="link-item">Interior</li>
+                        <li class="link-item">Exterior</li>
+                        <li class="link-item">Foods</li>
+                        <li class="link-item">Drinks</li>
+                    </ul>
+                </div>
+
+                <div class="pics">
+                    <div class="img">
+                        <img src="../../../assets/images/resturants/resturant1.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../../../assets/images/resturants/resturant2.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../../../assets/images/resturants/resturant3.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../../../assets/images/resturants/resturant4.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../../../assets/images/resturants/resturant5.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../../../assets/images/resturants/resturant6.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../../../assets/images/resturants/resturant7.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../../../assets/images/resturants/resturant8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews" id="reviews">
+                <h2>What <span>482</span> people are saying</h2>
+                <p class="para">Overall ratings and reviews</p>
+                <div class="ratings">
+                    <div class="review-text">
+                        <p>Reviews can only be made by diners who have eaten in this resturant</p>
+                        <div class="star">
+                            <star-rating [value]="resturant.rating" [totalstars]="5" checkedcolor="#002C55" uncheckedcolor="gray" size="30px" [readonly]="false"
+                            (rate)="onRate($event)"></star-rating>
+                            <p style="color: #002C55;">{{resturant.rating}} Based on recent ratings</p>
+                        </div>
+                        <div class="service-ratings">
+                            <div class="food sub">
+                                <p>3.8</p>
+                                <p class="under">Food</p>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="service sub extra">
+                                <p>3.0</p>
+                                <p class="under">Service</p>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="ambience sub extra">
+                                <p>4.0</p>
+                                <p class="under">Ambience</p>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="value sub extra">
+                                <p>3.2</p>
+                                <p class="under">Value</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-graph">
+                        <div class="rate-detail">
+                            <p>5</p>
+                            <div class="5 level">
+                                <div class="level5">
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="rate-detail">
+                            <p>4</p>
+                            <div class="4 level">
+                                <div class="level4">
+                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rate-detail">
+                            <p>3</p>
+                            <div class="3 level">
+                                <div class="level3">
+                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rate-detail">
+                            <p>2</p>
+                            <div class="2 level">
+                                <div class="level2">
+                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rate-detail">
+                            <p>1</p>
+                            <div class="1 level">
+                                <div class="level1">
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="right">
 
         </div>
     </div>
 </div>
+

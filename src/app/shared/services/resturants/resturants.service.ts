@@ -20,7 +20,7 @@ export class ResturantsService {
     return this.http.get(`${BASE_URL}/resturants?name=${param.search_term}`)
   }
 
-  getResturant(id: number) {
+  getResturant(id: string) {
     return this.http.get(`${BASE_URL}/resturants/${id}`)
   }
 

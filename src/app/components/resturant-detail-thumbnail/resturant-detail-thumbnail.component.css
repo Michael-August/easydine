@@ -13,6 +13,8 @@
 .right {
     background-color: white;
     width: 33.33%;
+    height:auto;
+    border-radius:10px 10px 0 0 ;
 }
 
 .left {
@@ -20,7 +22,47 @@
     width: 66.66%;
     margin-right: 49px;
 }
-
+.attarch{
+    width: 15px;
+    fill: black !important;
+    margin-right:13px;
+    align-content: space-around;
+    /* margin:30px 0 0 0; */
+}
+.restaurant-map{
+    margin: 20px 30px 20px 30px;
+    border-radius: 10px;
+    height:200px;
+    border: 20px solid white;
+    box-shadow: 10px;
+    
+}
+.rest-detail-left{
+    margin:20px 30px 10px 30px ;
+}
+.rest-span{
+    display:block;
+    width: 250px;
+    margin:10px 0px 10px 0px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+}
+.rest-span>span{
+    padding:10px;
+}
+.rest-detail-left-head{
+    margin:10px 0 5px 0px;
+    font-family: Lato;
+    font-weight: 400;
+}
+/* .rest-detail-left-head>img{
+    padding: 50%;
+} */
+.rest-detail-left-item{
+    font-size: small;
+    margin:5px 0 10px 30px;
+}
 /* img {
     width: 100%;
     height: inherit;

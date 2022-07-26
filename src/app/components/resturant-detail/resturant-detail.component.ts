@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ResturantsService } from 'src/app/shared/services/resturants/resturants.service';
 
 @Component({
   selector: 'app-resturant-detail',
@@ -8,16 +9,20 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ResturantDetailComponent implements OnInit {
 
-  resturantId!: string | null;
+  resturantId: any
+  resturant: any
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute, private resturants: ResturantsService) { }
 
   ngOnInit(): void {
     this.resturantId = this.activatedRoute.snapshot.paramMap.get('id')
+    this.getResturant(this.resturantId)
   }
 
-  // getResturant(resturantId) {
-    
-  // }
+  getResturant(resturantId: string) {
+    this.resturants.getResturant(resturantId).subscribe((res:any) => {
+      this.resturant = res
+    })
+  }
 
 }

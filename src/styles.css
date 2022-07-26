@@ -31,6 +31,11 @@ body {
     animation-fill-mode: forwards;
 }
 
+body a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* @keyframes fadeInAnimation {
     0% {

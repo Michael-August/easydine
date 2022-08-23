@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import { ResturantListComponent } from '../app/components/resturant-list/resturant-list.component';
 import { ResturantThumbnailsComponent } from '../app/components/resturant-thumbnails/resturant-thumbnails.component';
 import { ResturantDetailComponent } from './components/resturant-detail/resturant-detail.component';
@@ -17,8 +16,10 @@ import { HomeComponent } from '../app/pages/home/home.component';
 import { SpacesComponent } from './pages/resturant-detail/resturant-detail.component';
 import { ResturantsComponent } from './pages/resturants/resturants.component';
 import { ReactiveFormsModule } from '@angular/forms';
+
 import { RatingModule } from 'ng-starrating';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SpaceListComponent } from './components/space-list/space-list.component';
+import { SpaceThumbnailComponent } from './components/space-thumbnail/space-thumbnail.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     HomeComponent,
     SpacesComponent,
-    ResturantsComponent
+    ResturantsComponent,
+    SpaceListComponent,
+    SpaceThumbnailComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     ReactiveFormsModule,
     RatingModule,
-    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

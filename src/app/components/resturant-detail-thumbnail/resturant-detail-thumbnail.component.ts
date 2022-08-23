@@ -14,13 +14,19 @@ export class ResturantDetailThumbnailComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input() resturant: any;
+  @Input() resturant: any; 
+  openModal: boolean = false 
 
   onRate($event: { oldValue: number, newValue: number, starRating: StarRatingComponent }) {
     alert(`Old Value:${$event.oldValue}, 
       New Value: ${$event.newValue}, 
       Checked Color: ${$event.starRating.checkedcolor}, 
       Unchecked Color: ${$event.starRating.uncheckedcolor}`);
+  }
+
+  toggleModal() {
+    this.openModal = !this.openModal
+    console.log('click')
   }
 
 }

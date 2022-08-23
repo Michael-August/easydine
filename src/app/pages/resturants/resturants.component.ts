@@ -10,10 +10,12 @@ export class ResturantsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+   
   }
 
   go_back() {
-    window.history.back()
+  window.history.back()
+    
   }
 
 }

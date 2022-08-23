@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import { ResturantListComponent } from '../app/components/resturant-list/resturant-list.component';
 import { ResturantThumbnailsComponent } from '../app/components/resturant-thumbnails/resturant-thumbnails.component';
 import { ResturantDetailComponent } from './components/resturant-detail/resturant-detail.component';
@@ -16,6 +18,7 @@ import { SpacesComponent } from './pages/resturant-detail/resturant-detail.compo
 import { ResturantsComponent } from './pages/resturants/resturants.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RatingModule } from 'ng-starrating';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { RatingModule } from 'ng-starrating';
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    RatingModule
+    RatingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

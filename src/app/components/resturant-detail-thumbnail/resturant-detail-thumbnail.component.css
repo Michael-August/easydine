@@ -299,3 +299,38 @@
     width: 100%;
     height: inherit;
 } */
+
+/* modal-style */
+
+.modal-overlay {
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    /* height: 200%; */
+    transition: all 0.4s;
+}
+
+.modal-box {
+    margin: 5% auto;
+    background: #FFFFFF;
+    width: 70%;
+    padding: 15px;
+}
+
+.modal-box .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.modal-box .head p {
+    font-weight: 600;
+    color: red;
+    cursor: pointer;
+}
+
+

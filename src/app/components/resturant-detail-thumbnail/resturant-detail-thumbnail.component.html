@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="pics">
-                    <div class="img">
+                    <!-- <div class="img">
                         <img src="../../../assets/images/resturants/resturant1.jpg" alt="">
                     </div>
                     <div class="img">
@@ -82,8 +82,8 @@
                     </div>
                     <div class="img">
                         <img src="../../../assets/images/resturants/resturant7.jpg" alt="">
-                    </div>
-                    <div class="img">
+                    </div> -->
+                    <div class="img" (click)="toggleModal()" >
                         <img src="../../../assets/images/resturants/resturant8.jpg" alt="">
                     </div>
                 </div>
@@ -198,3 +198,17 @@
     </div>
 </div>
 
+<div class="modal-overlay" *ngIf="openModal">
+    <div class="modal-box">
+        <div class="head">
+            <h3>Spaces</h3>
+            <p (click)="toggleModal()">X</p>
+        </div>
+        <div class="body">
+            <p>All Spaces</p>
+        </div>
+    </div>
+</div>
+<ng-template>
+
+</ng-template>

@@ -201,12 +201,86 @@
         {
             "resturant_id": 1,
             "id": 1,
-            "space_image": "",
-            "name": "",
-            "person_per_table": "",
-            "table_numbers": []
+            "space_image": "assets/images/resturants/resturant1.jpg",
+            "name": "Table section",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 2,
+            "id": 2,
+            "space_image": "assets/images/resturants/resturant2.jpg",
+            "name": "Eatery",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 3,
+            "id": 3,
+            "space_image": "assets/images/resturants/resturant3.jpg",
+            "name": "Dining Hall",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 4,
+            "id": 4,
+            "space_image": "assets/images/resturants/resturant4.jpg",
+            "name": "Canteen section",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 5,
+            "id": 5,
+            "space_image": "assets/images/resturants/resturant5.jpg",
+            "name": "Kitchen",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 6,
+            "id": 6,
+            "space_image": "assets/images/resturants/resturant6.jpg",
+            "name": "Table Space",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 7,
+            "id": 7,
+            "space_image": "assets/images/resturants/resturant7.jpg",
+            "name": "Table for VIP",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 8,
+            "id": 8,
+            "space_image": "assets/images/resturants/resturant8.jpg",
+            "name": "South End",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 9,
+            "id": 9,
+            "space_image": "assets/images/resturants/resturant7.jpg",
+            "name": "Table for VIP",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
+        },
+        {
+            "resturant_id": 10,
+            "id": 10,
+            "space_image": "assets/images/resturants/resturant8.jpg",
+            "name": "East End",
+            "person_per_table": "4",
+            "table_numbers": [1,2,3,4,5]
         }
+       
     ],
+
     "bookings": [
         {
             "id": 1,

@@ -156,6 +156,10 @@
     overflow: hidden;
 }
 
+.space_img {
+    width: 100%;
+}
+
 .reviews h2 {
     border-bottom: 1px solid rgb(110, 106, 106);
     padding-bottom: 30px;
@@ -314,16 +318,24 @@
 }
 
 .modal-box {
+    position: relative;
     margin: 5% auto;
     background: #FFFFFF;
     width: 70%;
-    padding: 15px;
+    padding: 20px;
+}
+.x-mark {
+    position: absolute;
+    top: 3px;
+    right: 6px;
 }
 
 .modal-box .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 300px;
+    overflow: hidden;
 
 }
 

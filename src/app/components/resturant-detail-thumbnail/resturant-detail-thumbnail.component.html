@@ -62,6 +62,9 @@
                 </div>
 
                 <div class="pics">
+                    <div (click)="showSpace(simage.id)" *ngFor="let simage of spaces" class="img">
+                        <img src="{{simage.space_image}}" alt="">
+                    </div>
                     <!-- <div class="img">
                         <img src="../../../assets/images/resturants/resturant1.jpg" alt="">
                     </div>
@@ -82,10 +85,10 @@
                     </div>
                     <div class="img">
                         <img src="../../../assets/images/resturants/resturant7.jpg" alt="">
-                    </div> -->
-                    <div class="img" (click)="toggleModal()" >
-                        <img src="../../../assets/images/resturants/resturant8.jpg" alt="">
                     </div>
+                    <div class="img" (click)="showSpace(resturant.id)" >
+                        <img src="../../../assets/images/resturants/resturant8.jpg" alt="">
+                    </div> -->
                 </div>
             </div>
 
@@ -201,11 +204,17 @@
 <div class="modal-overlay" *ngIf="openModal">
     <div class="modal-box">
         <div class="head">
-            <h3>Spaces</h3>
-            <p (click)="toggleModal()">X</p>
+            <!-- <h3>Spaces</h3> -->
+            <img class="space_img" src="{{space.space_image}}" alt="space_img">
+            <p class="x-mark" (click)="toggleModal()">X</p>
         </div>
         <div class="body">
             <p>All Spaces</p>
+            <h1>{{space.name}}</h1>
+            <p>Person per table: {{space.person_per_table}}</p>
+            <p>Table Numbers:</p>
+            <div><button *ngFor="let num of space. table_numbers">{{num}}</button></div>
+
         </div>
     </div>
 </div>

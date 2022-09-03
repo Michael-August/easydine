@@ -135,8 +135,8 @@
 
 .pics {
     column-count: 4;
-    column-gap: 7px;
-    margin-bottom: 80px;
+    column-gap: 10px;
+    margin-bottom: 90px;
     overflow: hidden;
 }
 
